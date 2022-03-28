@@ -11,14 +11,20 @@
 		AA43CCD627E806EC001DA0F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43CCD527E806EC001DA0F1 /* ContentView.swift */; };
 		AA43CCD827E806EE001DA0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43CCD727E806EE001DA0F1 /* Assets.xcassets */; };
 		AA43CCDB27E806EE001DA0F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43CCDA27E806EE001DA0F1 /* Preview Assets.xcassets */; };
+		AA43CCE527E80F29001DA0F1 /* SimpleToDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA43CCE327E80F29001DA0F1 /* SimpleToDoModel.xcdatamodeld */; };
+		AA43CCE827E8128A001DA0F1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43CCE727E8128A001DA0F1 /* CoreDataManager.swift */; };
+		AA9D37B027F2092A00BC156B /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9D37AF27F2092A00BC156B /* Splash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA43CCD027E806EC001DA0F1 /* MidtermCSC416.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidtermCSC416.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA43CCD027E806EC001DA0F1 /* Reminds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA43CCD327E806EC001DA0F1 /* MidtermCSC416App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtermCSC416App.swift; sourceTree = "<group>"; };
 		AA43CCD527E806EC001DA0F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA43CCD727E806EE001DA0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA43CCDA27E806EE001DA0F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA43CCE427E80F29001DA0F1 /* SimpleToDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleToDoModel.xcdatamodel; sourceTree = "<group>"; };
+		AA43CCE727E8128A001DA0F1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AA9D37AF27F2092A00BC156B /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 		AA43CCD127E806EC001DA0F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA43CCD027E806EC001DA0F1 /* MidtermCSC416.app */,
+				AA43CCD027E806EC001DA0F1 /* Reminds.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +57,13 @@
 		AA43CCD227E806EC001DA0F1 /* MidtermCSC416 */ = {
 			isa = PBXGroup;
 			children = (
+				AA43CCE627E81268001DA0F1 /* Manager */,
 				AA43CCD327E806EC001DA0F1 /* MidtermCSC416App.swift */,
 				AA43CCD527E806EC001DA0F1 /* ContentView.swift */,
 				AA43CCD727E806EE001DA0F1 /* Assets.xcassets */,
 				AA43CCD927E806EE001DA0F1 /* Preview Content */,
+				AA43CCE327E80F29001DA0F1 /* SimpleToDoModel.xcdatamodeld */,
+				AA9D37AF27F2092A00BC156B /* Splash.storyboard */,
 			);
 			path = MidtermCSC416;
 			sourceTree = "<group>";
@@ -65,6 +74,14 @@
 				AA43CCDA27E806EE001DA0F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA43CCE627E81268001DA0F1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AA43CCE727E8128A001DA0F1 /* CoreDataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +101,7 @@
 			);
 			name = MidtermCSC416;
 			productName = MidtermCSC416;
-			productReference = AA43CCD027E806EC001DA0F1 /* MidtermCSC416.app */;
+			productReference = AA43CCD027E806EC001DA0F1 /* Reminds.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,6 +144,7 @@
 			files = (
 				AA43CCDB27E806EE001DA0F1 /* Preview Assets.xcassets in Resources */,
 				AA43CCD827E806EE001DA0F1 /* Assets.xcassets in Resources */,
+				AA9D37B027F2092A00BC156B /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +157,8 @@
 			files = (
 				AA43CCD627E806EC001DA0F1 /* ContentView.swift in Sources */,
 				AA43CCD427E806EC001DA0F1 /* MidtermCSC416App.swift in Sources */,
+				AA43CCE827E8128A001DA0F1 /* CoreDataManager.swift in Sources */,
+				AA43CCE527E80F29001DA0F1 /* SimpleToDoModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,15 +295,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanennis.MidtermCSC416;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reminds;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,15 +326,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanennis.MidtermCSC416;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reminds;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA43CCE327E80F29001DA0F1 /* SimpleToDoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA43CCE427E80F29001DA0F1 /* SimpleToDoModel.xcdatamodel */,
+			);
+			currentVersion = AA43CCE427E80F29001DA0F1 /* SimpleToDoModel.xcdatamodel */;
+			path = SimpleToDoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA43CCC827E806EC001DA0F1 /* Project object */;
 }
